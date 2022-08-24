@@ -1,0 +1,13 @@
+package com.hbt.semillero.poo;
+
+import java.math.BigDecimal;
+
+public class CreacionVehiculoApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BigDecimal precio = new BigDecimal(100);
+		Vehiculo vehiculo = new Vehiculo("Sail","Chevroleth",precio);
+		System.out.print(vehiculo.toString());
+	}
+}

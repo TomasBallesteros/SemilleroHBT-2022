@@ -1,0 +1,13 @@
+package com.hbt.semillero.poo;
+
+public class CreacionVehiculoApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vehiculo vehiculo = new Vehiculo();
+		
+		vehiculo.setModelo("Chevroleth-Sail");
+		System.out.print(vehiculo.toString());
+	}
+
+}
