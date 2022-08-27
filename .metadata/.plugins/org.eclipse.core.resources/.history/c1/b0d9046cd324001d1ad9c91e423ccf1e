@@ -1,0 +1,14 @@
+/**
+ * TematicaEnum.java
+ */
+package com.hbt.semillero.emuns;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+public enum TematicaEnum {
+
+}

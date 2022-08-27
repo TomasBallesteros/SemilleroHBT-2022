@@ -1,0 +1,40 @@
+/**
+ * Historias.java
+ */
+package com.hbt.semillero.poo;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.hbt.semillero.emuns.TematicaEnum;
+import com.hbt.semillero.emuns.estadoEnum;
+import com.hbt.semillero.entity.Comic;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> Semillero2022
+ * @author Tomas Ballesteros
+ * @version 1.0
+ */
+public class Historias extends Comic {
+	
+	/**
+	 * Atributo que determina  
+	 */
+	private static final long serialVersionUID = 1518806253175409181L;
+
+	public Historias() {
+	}
+	
+	public void ListarHistorias(int historias) {
+		
+		List<Comic> listaComics = new ArrayList<>();
+		Comic comic = new Comic(1L, "Nombre", "Editorial", TematicaEnum.AVENTURAS, "Coleccion", (short)100, new BigDecimal(2500), "Autores", new Boolean(true), LocalDate.now(), estadoEnum.ACTIVO, (short)10);
+		comic.setEstado(estadoEnum.INACTIVO);
+		listaComics.add(comic);
+		System.out.print(listaComics);
+		
+	}
+}

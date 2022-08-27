@@ -1,0 +1,51 @@
+/**
+ * CreacionComicTest.java
+ */
+package com.hbt.semillero.test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.hbt.semillero.emuns.TematicaEnum;
+import com.hbt.semillero.emuns.estadoEnum;
+import com.hbt.semillero.entity.Comic;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> Semillero2022
+ * @author Tomas Ballesteros
+ * @version 1.0
+ */
+public class CreacionComicTest {
+	
+	private final static Logger LOGGER = Logger.getLogger(CreacionComicTest.class);
+	
+	@Before
+	public void inicializar() {
+		BasicConfigurator.configure();
+		LOGGER.info("Inicialización de Configuracion de Log4j.");
+	}
+	
+	@Test
+	public void whenCreateComicGivenSuccesThenOK() {
+		Comic comic = new Comic(1L, "Nombre", "Editorial", TematicaEnum.AVENTURAS, "Coleccion", (short)100, new BigDecimal(2500), "Autores", new Boolean(true), LocalDate.now(), estadoEnum.ACTIVO, (short)10);
+		Comic comic2 = new Comic(1L, "Nombre", "Editorial", TematicaEnum.AVENTURAS, "Coleccion", (short)100, new BigDecimal(2500), "Autores", new Boolean(true), LocalDate.now(), estadoEnum.INACTIVO, (short)10);
+		
+		assertNotNull(comic);
+		List<Comic> listaComics = new ArrayList<>();
+		listaComics.add(comic);
+		listaComics.add(comic2);
+		
+		LOGGER.info("Comics: " + listaComics);
+	}
+}

@@ -1,0 +1,33 @@
+/**
+ * estadoEnum.java
+ */
+package com.hbt.semillero.emuns;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+public enum estadoEnum {
+	ACTIVO("Activo", 1),
+	INACTIVO("Inactivo", 2),
+	
+	;
+	
+	private String estado;
+	private int identificador;
+	
+	estadoEnum(String estado, int identificador){
+		this.estado = estado;
+		this.identificador = identificador;
+	}
+	
+	public String getEstado() {
+		return estado;
+	}
+	
+	public int getIdentificador() {
+		return identificador;
+	}
+}

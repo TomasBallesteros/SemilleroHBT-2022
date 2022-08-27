@@ -1,0 +1,29 @@
+package com.hbt.semillero.poo;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.hbt.semillero.emuns.TematicaEnum;
+import com.hbt.semillero.emuns.estadoEnum;
+import com.hbt.semillero.entity.Comic;
+
+public class CreacionVehiculoApp {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Vehiculo vehiculo = new Vehiculo("Sail","Chevroleth",new BigDecimal(100));
+		
+		System.out.print(vehiculo.toString());
+		
+		
+		Comic comic = new Comic(1L, "Nombre", "Editorial", TematicaEnum.AVENTURAS, "Coleccion", (short)100, new BigDecimal(2500), "Autores", new Boolean(true), LocalDate.now(), estadoEnum.ACTIVO, (short)10);
+		
+		List<Comic> listaComics = new ArrayList<>();
+		listaComics.add(comic);
+		
+		System.out.print("Lista: " + listaComics);
+	}
+}

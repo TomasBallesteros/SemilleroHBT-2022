@@ -1,0 +1,24 @@
+/**
+ * TematicaEnum.java
+ */
+package com.hbt.semillero.emuns;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Tomas Ballesteros
+ * @version 
+ */
+public enum TematicaEnum {
+	AVENTURAS,
+	BELICO,
+	HUMORISTICO,
+	DEPORTIVO,
+	FANTASTICO,
+	CIENCIA_FICCION,
+	HISTORICO,
+	HORROR,
+	
+	;
+
+}
