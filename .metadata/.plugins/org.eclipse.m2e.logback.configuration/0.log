@@ -1,0 +1,56 @@
+2022-09-01 22:21:51,599 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-01 22:23:47,161 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Proyectos\semillero-hbt-limpio\semillero-padre\semillero-servicios\pom.xml.
+2022-09-01 22:23:51,660 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2022-09-01 22:23:51,661 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2022-09-01 22:23:51,664 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2022-09-01 22:23:52,284 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2022-09-01 22:23:54,258 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:23:54,268 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:23:54,312 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:24:26,184 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:24:26,187 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-01 22:24:26,188 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:24:50,470 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-09-01 22:24:51,067 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Proyectos\semillero-hbt-limpio\semillero-padre\semillero-servicios\pom.xml.
+2022-09-01 22:24:52,085 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2022-09-01 22:24:52,085 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2022-09-01 22:24:52,086 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2022-09-01 22:24:52,487 [Worker-10: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for semillero-servicios
+2022-09-01 22:24:52,494 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2022-09-01 22:24:53,271 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:24:53,272 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:24:53,310 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:24:53,311 [Worker-6: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of semillero-servicios
+2022-09-01 22:24:53,312 [Worker-6: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for semillero-servicios
+2022-09-01 22:24:53,321 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:33:12,467 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:33:12,469 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-01 22:33:12,471 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:44:15,010 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:44:15,027 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:44:15,035 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:44:16,157 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:44:16,160 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:44:16,166 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:44:21,195 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:44:21,197 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:44:21,202 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:45:11,788 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:45:11,792 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:45:11,800 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:45:12,857 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:45:12,860 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:45:12,876 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:46:20,437 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:46:20,440 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:46:20,445 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:46:21,488 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:46:21,490 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:46:21,496 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:46:55,970 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:46:55,973 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:46:55,981 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-01 22:46:57,019 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-01 22:46:57,021 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-01 22:46:57,025 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Not copying test resources
+2022-09-02 15:47:00,284 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
