@@ -1,0 +1,24 @@
+package com.hbt.semillero.dtos;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ConsultaNombreComicDTO extends ResultadoDTO implements Serializable {
+	
+	
+
+}

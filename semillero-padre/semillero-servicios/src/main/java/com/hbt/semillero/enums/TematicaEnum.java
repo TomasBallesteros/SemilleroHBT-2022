@@ -4,8 +4,8 @@ package com.hbt.semillero.enums;
  * 		
  * <b>Descripción:<b> Clase que determina
  * <b>Caso de Uso:<b> 
- * @author Diego Fernado Alvarez Silva
- * @version
+ * @author Tomas Ballesteros
+ * @version 1.0
  */
 public enum TematicaEnum {
 

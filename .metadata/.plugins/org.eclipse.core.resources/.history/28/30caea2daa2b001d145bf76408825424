@@ -1,0 +1,19 @@
+package com.hbt.semillero.bean;
+
+import javax.ejb.Stateless;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+
+/**
+ * 
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> Semillero2021
+ * @author Tomas Ballesteros
+ * @version 
+ */
+
+@Stateless
+@TransactionManagement(TransactionManagementType.CONTAINER)
+public class ConsultarServicioTamanioNombreBean {
+
+}

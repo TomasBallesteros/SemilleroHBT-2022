@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="com.hbt.semillero.dtos.ComicSuperanTamanioDTO"/>
+<fullyQualifiedTypeName name="com.hbt.semillero.poo.interfaces.IConsultarServicioTamanioNombreLocal"/>
+<fullyQualifiedTypeName name="javax.ejb.Local"/>
+<fullyQualifiedTypeName name="com.hbt.semillero.dtos.ConsultaNombreComicDTO"/>
+<fullyQualifiedTypeName name="com.hbt.semillero.poo.interfaces.IConsultarComicLocal"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.hbt.semillero.entity.Comic"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

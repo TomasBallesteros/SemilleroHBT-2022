@@ -1,0 +1,14 @@
+/**
+ * IConsultarServicioTamanioNombreLocal.java
+ */
+package com.hbt.semillero.poo.interfaces;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+public class IConsultarServicioTamanioNombreLocal {
+
+}

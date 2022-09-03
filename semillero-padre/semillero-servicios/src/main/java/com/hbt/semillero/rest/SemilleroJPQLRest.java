@@ -29,7 +29,7 @@ import com.hbt.semillero.entity.Comic;
 /**
  * <b>Descripción:<b> Clase que determina
  * <b>Caso de Uso:<b> 
- * @author Diego Fernando Alvarez Silva
+ * @author Tomas Ballesteros
  * @version 1.0
  */
 @Path("/SemilleroJPQLRest")

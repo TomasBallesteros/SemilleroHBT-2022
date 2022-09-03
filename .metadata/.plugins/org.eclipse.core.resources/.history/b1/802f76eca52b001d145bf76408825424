@@ -1,0 +1,14 @@
+/**
+ * ComicSuperanTamanioDTO.java
+ */
+package com.hbt.semillero.dtos;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+public class ComicSuperanTamanioDTO {
+
+}

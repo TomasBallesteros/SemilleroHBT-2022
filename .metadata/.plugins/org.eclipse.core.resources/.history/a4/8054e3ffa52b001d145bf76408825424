@@ -1,0 +1,11 @@
+package com.hbt.semillero.dtos;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> Semillero2022
+ * @author Tomas Ballesteros
+ * @version 
+ */
+public class ComicSuperanTamanioDTO {
+
+}

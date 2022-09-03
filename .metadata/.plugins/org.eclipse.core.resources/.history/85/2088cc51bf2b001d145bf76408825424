@@ -1,0 +1,14 @@
+/**
+ * ConsultarComicRest.java
+ */
+package com.hbt.semillero.rest;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+public class ConsultarComicRest {
+
+}

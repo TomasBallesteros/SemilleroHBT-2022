@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.hbt.semillero.bean;
+
+/**
+ * @author thoma
+ *
+ */
+public class ConsultarServicioTamanioNombreBean {
+
+}

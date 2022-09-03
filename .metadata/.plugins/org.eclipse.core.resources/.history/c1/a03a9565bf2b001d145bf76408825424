@@ -1,0 +1,19 @@
+package com.hbt.semillero.rest;
+
+import javax.ws.rs.Path;
+
+import com.hbt.semillero.poo.interfaces.IConsultarComicLocal;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+@Path("/consultarComicRest")
+public class ConsultarComicRest {
+	
+	@EJB
+	private IConsultarComicLocal consultarNombreLocal;
+}

@@ -8,11 +8,10 @@ import com.hbt.semillero.enums.TipoVehiculoEnum;
  * <b>Descripción:<b> Clase que contiene la logica o la data de un vehiculo
  * esta actua como una super clase
  * <b>Caso de Uso:<b> Semillero2022
- * @author Diego Fernado Alvarez Silva
+ * @author Tomas Ballesteros
  * @version 1.0
  */
 public class Vehiculo {
-	
 	/**
 	 * Atributo que determina el modelo del vehiculo
 	 */
@@ -186,7 +185,7 @@ public class Vehiculo {
 	 * 
 	 * Metodo encargado de determinar si el vehiculo inicio marcha
 	 * <b>Caso de Uso</b> Semillero2022
-	 * @author PC
+	 * @author Tomas Ballesteros
 	 *
 	 */
 	public void arrancarEnMedio() {

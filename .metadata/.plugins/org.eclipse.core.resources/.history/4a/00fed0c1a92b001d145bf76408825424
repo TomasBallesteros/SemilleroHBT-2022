@@ -1,0 +1,20 @@
+package com.hbt.semillero.poo.interfaces;
+
+import javax.ejb.Local;
+
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+@Local
+public class IConsultarServicioTamanioNombreLocal {
+	
+	public ComicSuperanTamanioDTO comicsNoSuperanTamanio(short lengthComic);
+	
+	public ComicSuperanTamanioDTO comicsSuperanTamanio(short lengthComic);
+
+}

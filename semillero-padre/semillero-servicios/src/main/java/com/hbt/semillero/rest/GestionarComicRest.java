@@ -19,8 +19,8 @@ import com.hbt.semillero.poo.interfaces.IGestionarComicLocal;
  * <b>Descripción:<b> Clase que contiene el catalogo de servicios o apis que contienen
  * la logica de gestionar un comic o el CRUD
  * <b>Caso de Uso:<b> SEMILLERO 2022
- * @author Diego Fernado Alvarez Silva
- * @version
+ * @author Tomas Ballesteros
+ * @version 1.0
  */
 @Path("/gestionarComicRest")
 public class GestionarComicRest {
@@ -28,11 +28,12 @@ public class GestionarComicRest {
 	@EJB
 	private IGestionarComicLocal gestionarComicLocal;
 	
+	
 	/**
 	 * 
 	 * Metodo encargado de 
 	 * <b>Caso de Uso</b>
-	 * @author PC
+	 * @author Tomas Ballesteros
 	 * 
 	 * @param idComic
 	 * @return
@@ -59,5 +60,5 @@ public class GestionarComicRest {
 		}
 		return resultadoDTO;	
 	}
-
+	
 }
