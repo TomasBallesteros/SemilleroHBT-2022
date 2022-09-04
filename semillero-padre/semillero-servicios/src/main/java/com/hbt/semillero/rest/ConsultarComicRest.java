@@ -14,7 +14,7 @@ import com.hbt.semillero.poo.interfaces.IConsultarComicLocal;
 /**
  * <b>Descripción:<b> Clase que determina
  * <b>Caso de Uso:<b> 
- * @author thoma
+ * @author Tomas Balleteros
  * @version 
  */
 
@@ -24,12 +24,22 @@ public class ConsultarComicRest {
 	@EJB
 	private IConsultarComicLocal consultarNombreLocal;
 	
+	/**
+	 * 
+	 * Metodo encargado de mostrar el resultado de la consulta de los comics clasififcados en 2 listas según el length del campo nombre
+	 * <b>Caso de Uso</b> Semillero2022
+	 * @author Tomas Ballesteros
+	 * 
+	 * @param lengthComic
+	 * @return
+	 * @throws Exception
+	 */
 	@GET
 	@Path("/consultarComicTamanioNombre")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public ConsultaNombreComicDTO consultarNombreComic(@QueryParam("lengthComic") short lengthComic) {
-		return this.consultarNombreLocal.consultarNombreComic(lengthComic);
+		return this.consultarNombreLocal.consultarNombreComic(lengthComic) ;
 	}
 	
 }

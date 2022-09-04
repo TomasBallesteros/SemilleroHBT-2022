@@ -18,9 +18,9 @@ import com.hbt.semillero.entity.Comic;
 import com.hbt.semillero.poo.interfaces.IConsultarComicLocal;
 
 /**
- * <b>Descripción:<b> Clase que determina
- * <b>Caso de Uso:<b> 
- * @author thoma
+ * <b>Descripción:<b> Clase Bean que define la interfaz IConsultarComicLocal
+ * <b>Caso de Uso:<b> Semillero2022
+ * @author Tomas Ballesteros
  * @version 
  */
 
@@ -28,18 +28,33 @@ import com.hbt.semillero.poo.interfaces.IConsultarComicLocal;
 @TransactionManagement(TransactionManagementType.CONTAINER)
 public class ConsultarComicBean implements IConsultarComicLocal {
 	
-private final static Logger LOGGER = Logger.getLogger(ConsultarComicBean.class);
+	/**
+	 * Constante que contendra el log de la clase ConsultarComicBean
+	 */
+	private final static Logger LOGGER = Logger.getLogger(ConsultarComicBean.class);
 	
+	/**
+	 * Entity manager crado a partir del PersistenceContext
+	 */
 	@PersistenceContext
 	private EntityManager em;
 	
+	/**
+	 * Metodo encargado de retornar un objeto que contiene los nombres de los comics clasififcados en 2 listas según el length del que ocupan los caracteres en el campo
+	 * @see com.hbt.semillero.poo.interfaces.IConsultarComicLocal#consultarNombreComic(short)
+	 */
 	@Override
 	@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
 	@SuppressWarnings("unchecked")
 	public ConsultaNombreComicDTO consultarNombreComic(short lengthComic) {
+		
 		LOGGER.info("Inicia ejecucion consultarNombreComic() ");
+		
 		ConsultaNombreComicDTO dto = new ConsultaNombreComicDTO();
 		
+		/**
+		 * Validamos que el parámetro lengthComic no sea mayor a 50, en caso de cumplirse la condición se crea una excepción
+		 */
 		if(lengthComic > 50) {
 			
 			LOGGER.error("La longitud máxima permitida es de 50 caracteres");
@@ -48,7 +63,10 @@ private final static Logger LOGGER = Logger.getLogger(ConsultarComicBean.class);
 			return dto;
 			
 		} else {
-			
+		
+			/**
+			 * Creamos 2 variables de instancia para ejecutar 2 consultas de tipo JPQL
+			 */
 			String consultaNombreNoSuperaTamanioComic = "SELECT c.nombre"
 					+ " FROM Comic c"
 					+ " WHERE LENGTH(c.nombre) < :lengthComic";
@@ -65,12 +83,14 @@ private final static Logger LOGGER = Logger.getLogger(ConsultarComicBean.class);
 				queryConsultaNombreSuperaTamanioComic.setParameter("lengthComic", (int) lengthComic);
 				List<Comic> listNombresSuperaTamanioComics = queryConsultaNombreSuperaTamanioComic.getResultList();
 				
+				/**
+				 * Se pasa casa lista al campo destinado en el objeto dto
+				 */
 				dto.setComicsNoSuperanTamanio(listNombresNoSuperaTamanioComics.toString());
 				dto.setComicsSuperanTamanio(listNombresSuperaTamanioComics.toString());
 				dto.setExitoso(true);
 				dto.setMensajeEjecucion("Comics procesados exitosamente");
 				
-			
 			} catch (Exception e) {
 				dto.setExitoso(false);
 				dto.setMensajeEjecucion("Se ha presentado un error tecnico" + e.getMessage());
@@ -79,10 +99,11 @@ private final static Logger LOGGER = Logger.getLogger(ConsultarComicBean.class);
 			
 			LOGGER.info("Finaliza ejecucion consultarNombreComic() ");
 			
+			/**
+			 * Retornamos el objeto dto
+			 */
 			return dto;
 			
 		}
-		
 	}
-	
 }
