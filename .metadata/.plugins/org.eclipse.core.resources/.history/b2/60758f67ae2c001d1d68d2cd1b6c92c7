@@ -38,7 +38,7 @@ public class ConsultarComicRest {
 	@Path("/consultarComicTamanioNombre")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public ConsultaNombreComicDTO consultarNombreComic(@QueryParam("lengthComic") Short lengthComic) {
+	public ConsultaNombreComicDTO consultarNombreComic(@QueryParam("lengthComic") short lengthComic) {
 		return this.consultarNombreLocal.consultarNombreComic(lengthComic) ;
 	}
 	

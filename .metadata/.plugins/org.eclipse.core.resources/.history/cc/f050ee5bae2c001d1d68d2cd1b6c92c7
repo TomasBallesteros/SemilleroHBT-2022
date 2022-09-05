@@ -46,7 +46,7 @@ public class ConsultarComicBean implements IConsultarComicLocal {
 	@Override
 	@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
 	@SuppressWarnings("unchecked")
-	public ConsultaNombreComicDTO consultarNombreComic(Short lengthComic) {
+	public ConsultaNombreComicDTO consultarNombreComic(short lengthComic) {
 		
 		LOGGER.info("Inicia ejecucion consultarNombreComic() ");
 		
@@ -76,11 +76,11 @@ public class ConsultarComicBean implements IConsultarComicLocal {
 			
 			try {
 				Query queryConsultaNombreNoSuperaTamanioComic = em.createQuery(consultaNombreNoSuperaTamanioComic);
-				queryConsultaNombreNoSuperaTamanioComic.setParameter("lengthComic", lengthComic.intValue());
+				queryConsultaNombreNoSuperaTamanioComic.setParameter("lengthComic", (int) lengthComic);
 				List<Comic> listNombresNoSuperaTamanioComics = queryConsultaNombreNoSuperaTamanioComic.getResultList();
 				
 				Query queryConsultaNombreSuperaTamanioComic = em.createQuery(consultaNombreSuperaTamanioComic);
-				queryConsultaNombreSuperaTamanioComic.setParameter("lengthComic", lengthComic.intValue());
+				queryConsultaNombreSuperaTamanioComic.setParameter("lengthComic", (int) lengthComic);
 				List<Comic> listNombresSuperaTamanioComics = queryConsultaNombreSuperaTamanioComic.getResultList();
 				
 				/**
@@ -93,8 +93,8 @@ public class ConsultarComicBean implements IConsultarComicLocal {
 				
 			} catch (Exception e) {
 				dto.setExitoso(false);
-				dto.setMensajeEjecucion("Se ha presentado un error tecnico " + e.getMessage());
-				LOGGER.info("Se ha presentado un error tecnico " + e.getMessage());
+				dto.setMensajeEjecucion("Se ha presentado un error tecnico" + e.getMessage());
+				LOGGER.info("Se ha presentado un error tecnico" + e.getMessage());
 			}
 			
 			LOGGER.info("Finaliza ejecucion consultarNombreComic() ");
