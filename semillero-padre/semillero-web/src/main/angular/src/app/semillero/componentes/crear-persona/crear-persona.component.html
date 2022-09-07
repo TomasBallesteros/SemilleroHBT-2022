@@ -1,0 +1,19 @@
+<p>crear-persona works!</p>
+
+<h1>{{ saludo }}</h1>
+
+<p>{{ comics | json }}</p>
+
+<p>{{ imagen | json }}</p>
+
+<label>Ingrese el path de la imagen:</label>
+<input id="pathImagen" type="text" class="form-control-plaintext" [(ngModel)]="imagen.url">
+
+<img [src]="imagen.url" name="urlImagen" [height]="imagen.heigth" [width]="imagen.width" (click)="mostrarDescripcionImagen()">
+
+<h3>{{ listaComics | json }}</h3>
+
+<input id="deleteComic" type="text" class="form-control-plaintext" [(ngModel)]="idComic">
+<button (click)="eliminarComic()">Eliminar Comic</button>
+
+<div *ngIf="comicEliminado!='Ninguno'">Se ha eliminado el comic {{ comicEliminado }}, mediante interpolacion</div>
