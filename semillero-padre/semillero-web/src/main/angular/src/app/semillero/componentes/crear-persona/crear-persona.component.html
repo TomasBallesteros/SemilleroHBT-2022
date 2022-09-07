@@ -11,9 +11,13 @@
 
 <img [src]="imagen.url" name="urlImagen" [height]="imagen.heigth" [width]="imagen.width" (click)="mostrarDescripcionImagen()">
 
-<h3>{{ listaComics | json }}</h3>
+<ol>
+    <li *ngFor="let comic of listaComics; let indice = index">
+        <h4>Indice: {{ indice }} - Comic: {{ comic | json }}</h4>
+    </li>
+</ol>
 
 <input id="deleteComic" type="text" class="form-control-plaintext" [(ngModel)]="idComic">
 <button (click)="eliminarComic()">Eliminar Comic</button>
 
-<div *ngIf="comicEliminado!='Ninguno'">Se ha eliminado el comic {{ comicEliminado }}, mediante interpolacion</div>
+<div *ngIf="comicEliminado">{{ comicEliminado }}</div>

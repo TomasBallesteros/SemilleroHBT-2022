@@ -75,14 +75,14 @@ export class CrearPersonaComponent implements OnInit {
 
     console.log("Comic: " + JSON.stringify(this.listaComics));
 
-    this.comicEliminado = "Ninguno";
+    this.comicEliminado = "";
     this.idComic = 0;
 
   }
 
   public eliminarComic(){
     let resultComic = this.listaComics.splice(this.idComic,1);
-    this.comicEliminado = resultComic[0].nombre;
+    this.comicEliminado = "Se ha eliminado el comic " + resultComic[0].nombre + ", mediante interpolacion";
   }
 
   private asignarImagen(url : string, heigth : number, width : number ) : any {
