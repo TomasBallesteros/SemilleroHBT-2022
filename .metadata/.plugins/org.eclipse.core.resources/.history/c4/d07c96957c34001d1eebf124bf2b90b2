@@ -1,0 +1,21 @@
+package com.hbt.semillero.poo.interfaces;
+
+import java.math.BigDecimal;
+
+import javax.ejb.Local;
+
+import com.hbt.semillero.dtos.ComicDTO;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+@Local
+public interface IGestionarCompraComic {
+	
+	public ComicDTO compraComic(Long idComic, BigDecimal precio);
+
+}

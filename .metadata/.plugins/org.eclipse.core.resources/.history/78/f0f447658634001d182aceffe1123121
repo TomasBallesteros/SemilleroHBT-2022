@@ -1,0 +1,44 @@
+package com.hbt.semillero.dtos;
+
+import java.io.Serializable;
+
+import com.hbt.semillero.util.JsonUtils;
+
+import lombok.Data;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+public class EliminarComicDTO extends ResultadoDTO implements Serializable {
+	/**
+	 * Atributo que determina
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	
+	public EliminarComicDTO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public EliminarComicDTO(Boolean exitoso, String mensajeEjecucion) {
+		super(exitoso, mensajeEjecucion);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static ComicDTO valueOf(String arg) {
+		return JsonUtils.valueOf(arg, ComicDTO.class);
+	}
+	
+	@Override
+	public String toString() {
+		return JsonUtils.toStringJson(this);
+	}
+
+}

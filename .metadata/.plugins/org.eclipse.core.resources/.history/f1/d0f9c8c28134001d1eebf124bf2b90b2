@@ -1,0 +1,63 @@
+package com.hbt.semillero.bean;
+
+import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import com.hbt.semillero.dtos.CompraComicDTO;
+import com.hbt.semillero.dtos.ResultadoDTO;
+import com.hbt.semillero.poo.interfaces.IGestionarCompraComic;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+@Stateless
+@TransactionManagement(TransactionManagementType.CONTAINER)
+public class GestionarCompraComicBean implements IGestionarCompraComic {
+	
+	@PersistenceContext
+	private EntityManager em;
+	
+	@Override
+	@TransactionAttribute(TransactionAttributeType.REQUIRED)
+	public CompraComicDTO compraComic(Long idComic, Long cantidad) {
+		
+		CompraComicDTO compraComicDTO = new CompraComicDTO();
+		
+		if(idComic == null) {
+			compraComicDTO.setExitoso(false);
+			compraComicDTO.setMensajeEjecucion("Debe ingresar el id del comic a actualizar");
+			
+			return compraComicDTO;
+		}
+		
+		try {
+		//String sqlComicComprar = "UPDATE Comic "
+		//		+ " SET cantidad = :cantidad, "
+		//		+ " fechaVenta = SYSTIMESTAMP "
+		//		+ " WHERE id = :idComic ";
+		//Query queryComicComprar = em.createQuery(sqlComicComprar);
+		//queryComicComprar.setParameter("idComic", idComic);
+		//queryComicComprar.setParameter("cantidad", cantidad);
+		//queryComicComprar.executeUpdate();
+		compraComicDTO.setExitoso(true);
+		compraComicDTO.setMensajeEjecucion("El comic ha sido eliminado exitosamente");
+		}
+		catch (Exception e){
+			compraComicDTO.setExitoso(false);
+			compraComicDTO.setMensajeEjecucion("Se ha presentado un error tecnico");
+		}
+		
+		return compraComicDTO;
+	}
+
+}

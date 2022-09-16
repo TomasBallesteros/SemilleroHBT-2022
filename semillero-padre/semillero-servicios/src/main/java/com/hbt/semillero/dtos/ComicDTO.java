@@ -15,7 +15,11 @@ import com.hbt.semillero.enums.TematicaEnum;
 //@Setter
 //@AllArgsConstructor
 //@NoArgsConstructor
-public class ComicDTO {
+public class ComicDTO extends ResultadoDTO {
+	/**
+	 * Atributo que determina  
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private Long id;
 	
@@ -44,14 +48,20 @@ public class ComicDTO {
 	public ComicDTO() {
 	}
 	
-	public ComicDTO(String nombre) {
-		this.nombre = nombre;
+	public ComicDTO(Long id) {
+		this.cantidad = id;
 	}
 	
 	public ComicDTO(String nombre, EstadoEnum estadoEnum, BigDecimal precio) {
 		this.nombre = nombre;
 		this.estadoEnum = estadoEnum;
 		this.precio = precio;
+	}
+	
+	public ComicDTO(String nombre, EstadoEnum estadoEnum, Long cantidad) {
+		this.nombre = nombre;
+		this.estadoEnum = estadoEnum;
+		this.cantidad = cantidad;
 	}
 
 	/**

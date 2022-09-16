@@ -1,0 +1,29 @@
+/**
+ * EliminarComicDTO.java
+ */
+package com.hbt.semillero.dtos;
+
+import java.io.Serializable;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class EliminarComicDTO extends ResultadoDTO implements Serializable {
+	/**
+	 * Atributo que determina  
+	 */
+	private static final long serialVersionUID = 1L;
+	private Long id;
+
+}

@@ -1,7 +1,7 @@
 import { EstadoEnum } from "../componentes/crear-persona/enums/estado.enum";
-import { TematicaEnum } from "../componentes/crear-persona/enums/tematica.enum";
+import { ResultadoDTO } from "./resultado-dto";
 
-export class ComicDTO {
+export class ComicDTO extends ResultadoDTO {
 
     public id : number;
 	
@@ -27,9 +27,7 @@ export class ComicDTO {
 	
 	public cantidad : number;
 
-    constructor(nombre : string, tematicaEnum : TematicaEnum, precio : number) {
-        this.nombre = nombre;
-        this.tematicaEnum = tematicaEnum;
-        this.precio = precio;
+	constructor() {
+        super();
     }
 }

@@ -84,7 +84,7 @@ public class ConsultarComicBean implements IConsultarComicLocal {
 				List<Comic> listNombresSuperaTamanioComics = queryConsultaNombreSuperaTamanioComic.getResultList();
 				
 				/**
-				 * Se pasa casa lista al campo destinado en el objeto dto
+				 * Se pasa lista al campo destinado en el objeto dto
 				 */
 				dto.setComicsNoSuperanTamanio(listNombresNoSuperaTamanioComics.toString());
 				dto.setComicsSuperanTamanio(listNombresSuperaTamanioComics.toString());

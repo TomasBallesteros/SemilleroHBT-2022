@@ -1,0 +1,5 @@
+package com.hbt.semillero.bean;
+
+public class GestionarCompraComicBean {
+
+}

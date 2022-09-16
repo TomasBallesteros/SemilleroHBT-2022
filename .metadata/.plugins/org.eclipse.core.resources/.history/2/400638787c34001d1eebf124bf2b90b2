@@ -1,0 +1,16 @@
+/**
+ * CompraComicDTO.java
+ */
+package com.hbt.semillero.dtos;
+
+import java.io.Serializable;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author thoma
+ * @version 
+ */
+public class CompraComicDTO extends ResultadoDTO implements Serializable {
+
+}

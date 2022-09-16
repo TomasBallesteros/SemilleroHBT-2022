@@ -11,6 +11,8 @@ import { BienvenidaComponent } from './semillero/componentes/home/bienvenida-com
 import { MenuComponent } from './semillero/componentes/menu/menu-component';
 import { CrearPersonaComponent } from './semillero/componentes/crear-persona/crear-persona.component';
 import { TestComponent } from './semillero/componentes/crear-persona/test.component';
+import { GestionarComicComponent } from './semillero/componentes/gestionar-comic/gestionar-comic.component';
+import { ConsultarComicComponent } from './semillero/componentes/gestionar-comic/consultar-comic/consultar-comic.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TestComponent } from './semillero/componentes/crear-persona/test.compon
     MenuComponent,
     BienvenidaComponent,
     CrearPersonaComponent,
-    TestComponent
+    TestComponent,
+    GestionarComicComponent,
+    ConsultarComicComponent
 
   ],
   imports: [
